@@ -1,6 +1,6 @@
 $("#main").on("input", e => {
     let data = e.target.value
-    let newData = data.replace(/Yellow\shighlight\s\|\s?Location\:\s[0-9,]+\n/g, "") //.replace(/\n\n/g, "")
+    let newData = data.replace(/Yellow\shighlight\s\|\s?(Location|Page)\:\s[0-9,]+\n/g, "") //.replace(/\n\n/g, "")
     let output = [];
     let outputData = newData.split("\n")
     outputData.forEach(line => {
