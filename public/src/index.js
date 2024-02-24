@@ -3,7 +3,7 @@ $("#main").on("input", (e) => {
   let newData = data.replace(
     /Yellow\shighlight\s\|\s?(Location|Page)\:\s[0-9,]+\n/g,
     ""
-  ); //.replace(/\n\n/g, "")
+  ).replace(/\n\n/g, "\n")
   let output = [];
   let outputData = newData.split("\n");
   outputData.forEach((line) => {
